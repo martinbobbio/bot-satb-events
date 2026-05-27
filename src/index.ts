@@ -97,23 +97,25 @@ const adminEvents: AdminEvent[] = [
     name: 'Admin Abuse 1',
     emoji: '👑',
     weekday: 6,
-    hour: 15
+    hour: 18
   },
   {
     type: 'admin',
     name: 'Admin Abuse 2',
     emoji: '👑',
     weekday: 0,
-    hour: 10
+    hour: 12
   },
   {
     type: 'admin',
     name: 'Taco Tuesday',
     emoji: '🌮',
     weekday: 2,
-    hour: 20
+    hour: 23
   }
 ];
+
+const TIMEZONE_OFFSET = 0;
 
 // =========================
 // CLIENT
@@ -144,7 +146,7 @@ function getEventStatus(event: EventData): ParsedEvent {
       const testDate = new Date();
 
       testDate.setDate(now.getDate() + i);
-      testDate.setHours(event.hour, 0, 0, 0);
+      testDate.setUTCHours(event.hour + TIMEZONE_OFFSET, 0, 0, 0);
 
       if (testDate.getDay() !== event.weekday) {
         continue;
@@ -197,7 +199,12 @@ function getEventStatus(event: EventData): ParsedEvent {
 
     const start = new Date();
 
-    start.setHours(hour, 0, 0, 0);
+    start.setUTCHours(
+      hour + TIMEZONE_OFFSET,
+      0,
+      0,
+      0
+    );
 
     const end = new Date(
       start.getTime() + NORMAL_EVENT_DURATION * 60 * 1000
@@ -230,7 +237,7 @@ function getEventStatus(event: EventData): ParsedEvent {
     closestStart = new Date();
 
     closestStart.setDate(closestStart.getDate() + 1);
-    closestStart.setHours(event.hours[0], 0, 0, 0);
+    closestStart.setUTCHours(event.hours[0] + TIMEZONE_OFFSET, 0, 0, 0);
   }
 
   return {
