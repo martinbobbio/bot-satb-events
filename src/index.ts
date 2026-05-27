@@ -1,5 +1,5 @@
 import 'dotenv/config';
-
+import express from 'express';
 import {
   Client,
   GatewayIntentBits,
@@ -7,6 +7,20 @@ import {
   TextChannel,
   Message
 } from 'discord.js';
+
+const app = express();
+
+app.get('/', (_req, res) => {
+  res.json({
+    status: 'ok',
+    message: 'SATB bot is running',
+    time: new Date().toISOString()
+  });
+});
+
+app.listen(3000, () => {
+  console.log('🌐 Express server running on port 3000');
+});
 
 // =========================
 // TYPES
