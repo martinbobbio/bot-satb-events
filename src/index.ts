@@ -155,14 +155,14 @@ function getEventStatus(event: EventData): ParsedEvent {
 
     let nextStart: Date | null = null;
 
-    for (let i = 0; i < 7; i++) {
+    for (let i = 0; i <= 7; i++) {
 
       const testDate = new Date();
 
       testDate.setDate(now.getDate() + i);
       testDate.setUTCHours(event.hour + TIMEZONE_OFFSET, 0, 0, 0);
 
-      if (testDate.getDay() !== event.weekday) {
+      if (testDate.getUTCDay() !== event.weekday) {
         continue;
       }
 
