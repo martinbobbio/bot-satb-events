@@ -99,8 +99,8 @@ const events: NormalEvent[] = [
   },
   {
     type: 'normal',
-    name: 'Galaxy',
-    emoji: '🌌',
+    name: 'Yin Yang',
+    emoji: '☯️',
     hours: [1, 8, 14, 19]
   }
 ];
@@ -287,6 +287,27 @@ function buildEmbed(): EmbedBuilder {
 
   const parsedEvents = events.map(getEventStatus);
 
+  const adminBlockedEvents = parsedEvents.filter(normalEvent => {
+
+    return !parsedAdminEvents.some(adminEvent => {
+  
+      const adminStart = adminEvent.start.getTime();
+  
+      // 1 hora de admin + 1 hora vacía
+      const blockEnd =
+        adminStart + (ADMIN_EVENT_DURATION + 60) * 60 * 1000;
+  
+      const normalStart =
+        normalEvent.start.getTime();
+  
+      return (
+        normalStart >= adminStart &&
+        normalStart < blockEnd
+      );
+    });
+  
+  });
+
   parsedEvents.sort((a, b) => {
 
     if (a.isLive && !b.isLive) return -1;
@@ -297,8 +318,8 @@ function buildEmbed(): EmbedBuilder {
 
   // Hide live normal events if admin event is live
   const filteredNormalEvents = hasLiveAdmin
-    ? parsedEvents.filter(e => !e.isLive)
-    : parsedEvents;
+    ? adminBlockedEvents.filter(e => !e.isLive)
+    : adminBlockedEvents;
 
   // =========================
   // ADMIN SECTION
@@ -370,7 +391,10 @@ function buildEmbed(): EmbedBuilder {
     .setTitle('📅 SATB Events schedules')
     .setDescription(
       `# Admin Events\n\n${adminSection}\n\n` +
-      `# Regular Events\n\n${normalSection}`
+      `# Regular Events\n\n${normalSection}\n\n` +
+      `━━━━━━━━━━━━━━\n` +
+      `⚙️ **Coming Soon**\n` +
+      `Admin Machine & Crafting Machine information will be added soon.`
     )
     .setColor(EMBED_COLOR)
     .setFooter({
