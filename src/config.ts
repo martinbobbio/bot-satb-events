@@ -37,7 +37,7 @@ export const events: NormalEvent[] = [
   },
   {
     type: 'normal',
-    eventId: 'CANDY',
+    eventId: 'SOCCER',
     hours: [0, 7, 11, 18]
   },
   {
