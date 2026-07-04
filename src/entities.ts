@@ -22,7 +22,7 @@ export const CHARACTERS: Record<string, Entity> = {
     LA_GINGER_SEKOLAH: { id: 'LA_GINGER_SEKOLAH', name: 'La Ginger Sekolah', emoji: '<:character_lagingersekolah:1517527373845889116>' },
     KETUPAT_KEPAT_PREKUPAT: { id: 'KETUPAT_KEPAT_PREKUPAT', name: 'Ketupat Kepat Prekupat', emoji: '<:character_ketupat:1517527314274062517>' },
     SPINNY_HAMMY: { id: 'SPINNY_HAMMY', name: 'Spinny Hammy', emoji: '<:character_spinnyhammy:1517527293717778564>' },
-    CHICLETEIRA_BICICLETEIRA: { id: 'CHICLETEIRA_BICICLETEIRA', name: 'Chicleteira Bicicleteira', emoji: '<:character_chicleteirabicicleteir:1517527271257411727>' },
+    ARCADOPUS: { id: 'ARCADOPUS', name: 'Arcadopus', emoji: '<:character_arcadopus:1522701428521439513>' },
     SPAGHETTI_TUALETTI: { id: 'SPAGHETTI_TUALETTI', name: 'Spaghetti Tualetti', emoji: '<:character_spagettitueletti:1517527249463808110>' },
     LOS_BROS: { id: 'LOS_BROS', name: 'Los Bros', emoji: '<:character_losbros:1517527219381997733>' },
     GYM_BROS: { id: 'GYM_BROS', name: 'Gym Bros', emoji: '<:character_gymbros:1517527092940509345>' },
@@ -223,185 +223,185 @@ export const craftingMachineRecipes: string[][] = [
 ];
 
 export const adminMachineEvents = [
-    // Saturday
-    {
-      guaranteedCharacter: 'TIC_TAC',
-      luckyType: 'LUCKY_X32',
-      event: 'RAINBOW',
-      traits: ['TUNGTUNG', 'FIREWORKS', 'TRALALERO', 'NYAN_CAT']
-    },
-    {
-      guaranteedCharacter: 'MONEY_MONEY_PUGGY',
-      luckyType: 'LUCKY_X4',
-      event: 'NEON',
-      traits: ['UFO', 'TORNADO', 'WAVE']
-    },
-    {
-      guaranteedCharacter: 'ILLUMINATI_PYRAMID',
-      luckyType: 'LUCKY_X8',
-      event: 'GALAXY',
-      traits: ['LIGHTNING', 'STRAWBERRY', 'TUNGTUNG', 'TRALALERO']
-    },
-    {
-      guaranteedCharacter: 'CHARACTER_21',
-      luckyType: 'LUCKY_X4',
-      event: 'CANDY',
-      traits: ['UFO', 'WAVE', 'FIREWORKS']
-    },
-  
-    // Sunday
-    {
-      guaranteedCharacter: 'DUGDUGDUG_SAHUR',
-      luckyType: 'LUCKY_X4',
-      event: 'RADIOACTIVE',
-      traits: ['TORNADO', 'NYAN_CAT', 'TRALALERO']
-    },
-    {
-      guaranteedCharacter: 'BURGUERINI_BEARINI',
-      luckyType: 'LUCKY_X8',
-      event: 'GHOST',
-      traits: ['UFO', 'TUNGTUNG', 'LIGHTNING', 'WAVE']
-    },
-    {
-      guaranteedCharacter: 'ESOK_SEKOLAH',
-      luckyType: 'LUCKY_X16',
-      event: 'LAVA_AND_FROZEN',
-      traits: ['STRAWBERRY', 'FIREWORKS', 'TRALALERO']
-    },
-    {
-      guaranteedCharacter: 'W_OR_L',
-      luckyType: 'LUCKY_X4',
-      event: 'NEON',
-      traits: ['UFO', 'TUNGTUNG', 'TORNADO', 'NYAN_CAT']
-    },
-  
-    // Monday
-    {
-      guaranteedCharacter: 'RANG_RING_BUS',
-      luckyType: 'LUCKY_X4',
-      event: 'GALAXY',
-      traits: ['TRALALERO', 'STRAWBERRY', 'FIREWORKS']
-    },
-    {
-      guaranteedCharacter: 'GARAMA',
-      luckyType: 'LUCKY_X4',
-      event: 'CANDY',
-      traits: ['WAVE', 'UFO', 'TUNGTUNG', 'LIGHTNING']
-    },
-    {
-      guaranteedCharacter: 'CHARACTER_68',
-      luckyType: 'LUCKY_X4',
-      event: 'RAINBOW',
-      traits: ['TORNADO', 'TRALALERO']
-    },
-    {
-      guaranteedCharacter: 'MECCAVALHO',
-      luckyType: 'LUCKY_X8',
-      event: 'RADIOACTIVE',
-      traits: ['NYAN_CAT', 'STRAWBERRY', 'UFO', 'FIREWORKS']
-    },
-  
-    // Tuesday
-    {
-      guaranteedCharacter: 'CHARACTER_67',
-      luckyType: 'LUCKY_X8',
-      event: 'GHOST',
-      traits: ['TRALALERO', 'WAVE', 'TUNGTUNG']
-    },
-    {
-      guaranteedCharacter: 'DUL_DUL_DUL',
-      luckyType: 'LUCKY_X4',
-      event: 'NEON',
-      traits: ['LIGHTNING', 'UFO', 'STRAWBERRY']
-    },
-    {
-      guaranteedCharacter: 'CACASITO_SATALITO',
-      luckyType: 'LUCKY_X16',
-      event: 'LAVA_AND_FROZEN',
-      traits: ['FIREWORKS', 'NYAN_CAT', 'TORNADO', 'TRALALERO']
-    },
-    {
-      guaranteedCharacter: 'LA_GINGER_SEKOLAH',
-      luckyType: 'LUCKY_X4',
-      event: 'GALAXY',
-      traits: ['TUNGTUNG', 'UFO']
-    },
-  
-    // Wednesday
-    {
-      guaranteedCharacter: 'ILLUMINATI_PYRAMID',
-      luckyType: 'LUCKY_X4',
-      event: 'RAINBOW',
-      traits: ['WAVE', 'STRAWBERRY', 'TRALALERO', 'LIGHTNING']
-    },
-    {
-      guaranteedCharacter: 'GARAMA',
-      luckyType: 'LUCKY_X4',
-      event: 'CANDY',
-      traits: ['UFO', 'FIREWORKS', 'NYAN_CAT']
-    },
-    {
-      guaranteedCharacter: 'CHARACTER_21',
-      luckyType: 'LUCKY_X8',
-      event: 'RADIOACTIVE',
-      traits: ['TUNGTUNG', 'TORNADO', 'TRALALERO']
-    },
-    {
-      guaranteedCharacter: 'RANG_RING_BUS',
-      luckyType: 'LUCKY_X4',
-      event: 'GHOST',
-      traits: ['LIGHTNING', 'WAVE', 'STRAWBERRY', 'UFO']
-    },
-  
-    // Thursday
-    {
-      guaranteedCharacter: 'ESOK_SEKOLAH',
-      luckyType: 'LUCKY_X16',
-      event: 'CANDY',
-      traits: ['NYAN_CAT', 'FIREWORKS', 'TRALALERO']
-    },
-    {
-      guaranteedCharacter: 'MONEY_MONEY_PUGGY',
-      luckyType: 'LUCKY_X8',
-      event: 'GALAXY',
-      traits: ['UFO', 'TUNGTUNG', 'TORNADO', 'WAVE']
-    },
-    {
-      guaranteedCharacter: 'KETUPAT_KEPAT_PREKUPAT',
-      luckyType: 'LUCKY_X4',
-      event: 'NEON',
-      traits: ['STRAWBERRY', 'TRALALERO']
-    },
-    {
-      guaranteedCharacter: 'SPINNY_HAMMY',
-      luckyType: 'LUCKY_X4',
-      event: 'LAVA_AND_FROZEN',
-      traits: ['LIGHTNING', 'NYAN_CAT', 'TUNGTUNG', 'FIREWORKS']
-    },
-  
-    // Friday
-    {
-      guaranteedCharacter: 'CHICLETEIRA_BICICLETEIRA',
-      luckyType: 'LUCKY_X8',
-      event: 'GHOST',
-      traits: ['UFO', 'TRALALERO', 'WAVE']
-    },
-    {
-      guaranteedCharacter: 'SPAGHETTI_TUALETTI',
-      luckyType: 'LUCKY_X4',
-      event: 'RADIOACTIVE',
-      traits: ['TORNADO', 'STRAWBERRY', 'TUNGTUNG', 'LIGHTNING']
-    },
-    {
-      guaranteedCharacter: 'CHARACTER_67',
-      luckyType: 'LUCKY_X8',
-      event: 'CANDY',
-      traits: ['FIREWORKS', 'UFO', 'NYAN_CAT']
-    },
-    {
-      guaranteedCharacter: 'BURGUERINI_BEARINI',
-      luckyType: 'LUCKY_X32',
-      event: 'RAINBOW',
-      traits: ['TRALALERO', 'TUNGTUNG', 'WAVE', 'STRAWBERRY', 'TORNADO']
-    }
-  ];
+  // Saturday
+  {
+    guaranteedCharacter: 'GARAMA',
+    luckyType: 'LUCKY_X4',
+    event: 'RAINBOW',
+    traits: ['UFO', 'FIREWORKS', 'TUNGTUNG', 'WAVE']
+  },
+  {
+    guaranteedCharacter: 'CHARACTER_67',
+    luckyType: 'LUCKY_X8',
+    event: 'GHOST',
+    traits: ['TRALALERO', 'STRAWBERRY', 'LIGHTNING']
+  },
+  {
+    guaranteedCharacter: 'BURGUERINI_BEARINI',
+    luckyType: 'LUCKY_X32',
+    event: 'NEON',
+    traits: ['NYAN_CAT', 'TORNADO', 'UFO', 'FIREWORKS', 'TUNGTUNG']
+  },
+  {
+    guaranteedCharacter: 'KETUPAT_KEPAT_PREKUPAT',
+    luckyType: 'LUCKY_X4',
+    event: 'CANDY',
+    traits: ['WAVE', 'TRALALERO']
+  },
+
+  // Sunday
+  {
+    guaranteedCharacter: 'ILLUMINATI_PYRAMID',
+    luckyType: 'LUCKY_X8',
+    event: 'LAVA_AND_FROZEN',
+    traits: ['TUNGTUNG', 'UFO', 'STRAWBERRY', 'LIGHTNING']
+  },
+  {
+    guaranteedCharacter: 'SPAGHETTI_TUALETTI',
+    luckyType: 'LUCKY_X4',
+    event: 'GALAXY',
+    traits: ['FIREWORKS', 'WAVE', 'NYAN_CAT', 'TRALALERO']
+  },
+  {
+    guaranteedCharacter: 'ESOK_SEKOLAH',
+    luckyType: 'LUCKY_X16',
+    event: 'RADIOACTIVE',
+    traits: ['TORNADO', 'UFO', 'FIREWORKS']
+  },
+  {
+    guaranteedCharacter: 'CHARACTER_21',
+    luckyType: 'LUCKY_X4',
+    event: 'RAINBOW',
+    traits: ['STRAWBERRY', 'TUNGTUNG', 'WAVE']
+  },
+
+  // Monday
+  {
+    guaranteedCharacter: 'ARCADOPUS',
+    luckyType: 'LUCKY_X8',
+    event: 'CANDY',
+    traits: ['UFO', 'LIGHTNING', 'NYAN_CAT']
+  },
+  {
+    guaranteedCharacter: 'DUL_DUL_DUL',
+    luckyType: 'LUCKY_X4',
+    event: 'GHOST',
+    traits: ['TRALALERO', 'TORNADO', 'STRAWBERRY']
+  },
+  {
+    guaranteedCharacter: 'MECCAVALHO',
+    luckyType: 'LUCKY_X8',
+    event: 'NEON',
+    traits: ['WAVE', 'FIREWORKS', 'TUNGTUNG', 'UFO']
+  },
+  {
+    guaranteedCharacter: 'TIC_TAC',
+    luckyType: 'LUCKY_X32',
+    event: 'GALAXY',
+    traits: ['NYAN_CAT', 'TRALALERO', 'LIGHTNING', 'STRAWBERRY']
+  },
+
+  // Tuesday
+  {
+    guaranteedCharacter: 'RANG_RING_BUS',
+    luckyType: 'LUCKY_X4',
+    event: 'RADIOACTIVE',
+    traits: ['UFO', 'WAVE', 'FIREWORKS']
+  },
+  {
+    guaranteedCharacter: 'MONEY_MONEY_PUGGY',
+    luckyType: 'LUCKY_X8',
+    event: 'LAVA_AND_FROZEN',
+    traits: ['TUNGTUNG', 'TORNADO', 'NYAN_CAT', 'STRAWBERRY']
+  },
+  {
+    guaranteedCharacter: 'CHARACTER_68',
+    luckyType: 'LUCKY_X4',
+    event: 'RAINBOW',
+    traits: ['LIGHTNING', 'TRALALERO']
+  },
+  {
+    guaranteedCharacter: 'LA_GINGER_SEKOLAH',
+    luckyType: 'LUCKY_X4',
+    event: 'NEON',
+    traits: ['UFO', 'FIREWORKS']
+  },
+
+  // Wednesday
+  {
+    guaranteedCharacter: 'DUGDUGDUG_SAHUR',
+    luckyType: 'LUCKY_X4',
+    event: 'GALAXY',
+    traits: ['STRAWBERRY', 'TUNGTUNG', 'WAVE']
+  },
+  {
+    guaranteedCharacter: 'CHARACTER_21',
+    luckyType: 'LUCKY_X8',
+    event: 'CANDY',
+    traits: ['NYAN_CAT', 'UFO', 'TORNADO']
+  },
+  {
+    guaranteedCharacter: 'ILLUMINATI_PYRAMID',
+    luckyType: 'LUCKY_X4',
+    event: 'GHOST',
+    traits: ['FIREWORKS', 'TRALALERO', 'LIGHTNING', 'WAVE']
+  },
+  {
+    guaranteedCharacter: 'W_OR_L',
+    luckyType: 'LUCKY_X4',
+    event: 'RADIOACTIVE',
+    traits: ['UFO', 'STRAWBERRY', 'TUNGTUNG', 'NYAN_CAT']
+  },
+
+  // Thursday
+  {
+    guaranteedCharacter: 'BURGUERINI_BEARINI',
+    luckyType: 'LUCKY_X8',
+    event: 'RAINBOW',
+    traits: ['WAVE', 'LIGHTNING', 'FIREWORKS', 'TRALALERO']
+  },
+  {
+    guaranteedCharacter: 'GARAMA',
+    luckyType: 'LUCKY_X4',
+    event: 'NEON',
+    traits: ['UFO', 'STRAWBERRY', 'TORNADO', 'NYAN_CAT']
+  },
+  {
+    guaranteedCharacter: 'ESOK_SEKOLAH',
+    luckyType: 'LUCKY_X16',
+    event: 'GHOST',
+    traits: ['TUNGTUNG', 'WAVE', 'FIREWORKS']
+  },
+  {
+    guaranteedCharacter: 'SPINNY_HAMMY',
+    luckyType: 'LUCKY_X4',
+    event: 'GALAXY',
+    traits: ['UFO', 'LIGHTNING', 'TRALALERO', 'STRAWBERRY']
+  },
+
+  // Friday
+  {
+    guaranteedCharacter: 'GARAMA',
+    luckyType: 'LUCKY_X8',
+    event: 'LAVA_AND_FROZEN',
+    traits: ['NYAN_CAT', 'WAVE', 'TUNGTUNG']
+  },
+  {
+    guaranteedCharacter: 'RANG_RING_BUS',
+    luckyType: 'LUCKY_X4',
+    event: 'CANDY',
+    traits: ['TORNADO', 'UFO', 'FIREWORKS', 'LIGHTNING']
+  },
+  {
+    guaranteedCharacter: 'CACASITO_SATALITO',
+    luckyType: 'LUCKY_X16',
+    event: 'NEON',
+    traits: ['TRALALERO', 'STRAWBERRY', 'WAVE', 'TUNGTUNG']
+  },
+  {
+    guaranteedCharacter: 'MONEY_MONEY_PUGGY',
+    luckyType: 'LUCKY_X4',
+    event: 'RADIOACTIVE',
+    traits: ['UFO', 'NYAN_CAT', 'FIREWORKS']
+  }
+];
