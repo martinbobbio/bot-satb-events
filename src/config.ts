@@ -7,7 +7,7 @@ export const ADMIN_EVENT_DURATION = 60;
 
 export const TIMEZONE_OFFSET = 0;
 
-export const WEEKDAY_MAP = [0,1,2,3,4,5,6];
+export const WEEKDAY_MAP = [1,2,3,4,5,6,0];
 
 export const events: NormalEvent[] = [
   {
