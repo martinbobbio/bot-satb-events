@@ -42,7 +42,7 @@ export const events: NormalEvent[] = [
   },
   {
     type: 'normal',
-    eventId: 'SOCCER',
+    eventId: 'CRYSTAL',
     hours: [1, 8, 14, 19]
   }
 ];
