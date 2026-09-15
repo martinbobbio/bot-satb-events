@@ -114,8 +114,12 @@ export const GAME_EVENTS: Record<string, Entity> = {
       id: 'CRYSTAL',
       name: 'Crystal',
       emoji: '<:event_crystal:1533087845810442573>',
+    },
+    HEAVEN: {
+      id: 'HEAVEN',
+      name: 'Heaven',
+      emoji: '<:event_heaven:1549519762176872518>',
     }
-    
 };
 
 export const ADMIN_EVENTS = {
