@@ -13,7 +13,7 @@ export const events: NormalEvent[] = [
   {
     type: 'normal',
     eventId: 'LAVA_AND_FROZEN',
-    hours: [2, 17, 23]
+    hours: [17, 23]
   },
   {
     type: 'normal',
@@ -38,7 +38,7 @@ export const events: NormalEvent[] = [
   {
     type: 'normal',
     eventId: 'YIN_YANG',
-    hours: [0, 7, 11, 18]
+    hours: [2, 7, 11, 18]
   },
   {
     type: 'normal',
